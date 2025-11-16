@@ -75,6 +75,7 @@ pip install .
 ```
 
 ### 2\. Prepare an LLM client
+This is example pseudo-code using OpenAI; any LLM provider is acceptable as long as it exposes the same .chat(system_prompt, user_prompt) interface.
 
 Example (pseudo):
 

@@ -1,0 +1,34 @@
+{"task_id": "ATRAZINE_LIT_01",
+ "domain": "literature_extraction",
+ "difficulty": "medium",
+ "goal": "Find and summarize at least 3 peer-reviewed HPLC or LC-MS methods (2015 or later) for quantifying atrazine in surface water.",
+ "requirements": [
+    "Provide method source (journal/year).",
+    "Extract column type, mobile phase, gradient/isocratic mode, detection mode, LOD/LOQ.",
+    "Provide a short comparison table.",
+    "End with a recommended method to adopt in a new laboratory."
+ ],
+ "tools_allowed": ["web_search", "pdf_reader", "scratchpad"],
+ "max_steps": 40}
+{"task_id": "ATRAZINE_METHOD_02",
+ "domain": "method_design",
+ "difficulty": "medium",
+ "goal": "Compare at least two HPLC-MS methods for atrazine and propose a robust chromatographic method suitable for routine environmental analysis.",
+ "requirements": [
+    "Discuss column chemistry, flow rate, gradient/slope, injection volume.",
+    "Explain rationale (e.g., retention, selectivity, matrix compatibility).",
+    "Provide a proposed optimized method in structured format."
+ ],
+ "tools_allowed": ["web_search", "pdf_reader"],
+ "max_steps": 40}
+{"task_id": "ATRAZINE_TROUBLE_03",
+ "domain": "troubleshooting",
+ "difficulty": "medium",
+ "goal": "You are given a case of severe peak tailing and low recovery during atrazine HPLC analysis of river water. Provide likely causes and recommended fixes.",
+ "requirements": [
+    "Diagnose 3–5 plausible causes.",
+    "Provide corrections based on chromatography best practices.",
+    "Include a short troubleshooting decision tree."
+ ],
+ "tools_allowed": [],
+ "max_steps": 30}

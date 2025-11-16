@@ -1,0 +1,58 @@
+{"task_id": "ATRAZINE_LIT_01",
+ "key_points": [
+   "Methods must be real or plausibly real post-2015 atrazine HPLC/LC-MS papers.",
+   "Typical column: C18 RP, 100–150 mm, 2.1–4.6 mm.",
+   "Mobile phases: water/ACN or water/MeOH with formic acid or ammonium acetate.",
+   "Typical LOD for atrazine: low ng/L to low µg/L depending on instrument.",
+   "Comparison table required.",
+   "Recommendation must be justified."
+ ],
+ "must_not": [
+   "Invent unrealistic journals, impossible LODs (<0.01 ng/L).",
+   "Ignore comparison or recommendation."
+ ],
+ "reference_summary": "A sample correct summary would include 3 real or plausible post-2015 papers, extracted chromatographic parameters, a concise comparison table, and a recommended method with justification.",
+ "rubric_weights": {
+    "task_completion": 0.2,
+    "factual_correctness": 0.3,
+    "coverage": 0.2,
+    "clarity_structure": 0.2,
+    "format_compliance": 0.1
+ }}
+{"task_id": "ATRAZINE_METHOD_02",
+ "key_points": [
+   "Method comparison should mention column chemistry differences and effects.",
+   "Gradient justification (matrix complexity).",
+   "MS detection advantages vs UV.",
+   "Proposed method should have: column, mobile phases, gradient program, flow rate, injection volume, run time."
+ ],
+ "must_not": [
+   "Purely generic discussions with no atrazine relevance.",
+   "Missing proposed method section."
+ ],
+ "reference_summary": "A strong answer contains a realistic comparison of LC-MS methods and a clearly structured proposed method optimized for atrazine.",
+ "rubric_weights": {
+    "task_completion": 0.2,
+    "factual_correctness": 0.3,
+    "coverage": 0.2,
+    "clarity_structure": 0.2,
+    "format_compliance": 0.1
+ }}
+{"task_id": "ATRAZINE_TROUBLE_03",
+ "key_points": [
+   "Peak tailing causes: active sites, column aging, wrong pH, sample solvent mismatch.",
+   "Low recovery causes: poor SPE cartridge conditioning, breakthrough, matrix suppression.",
+   "Decision tree required."
+ ],
+ "must_not": [
+   "Only list causes without fixes.",
+   "Omit decision tree."
+ ],
+ "reference_summary": "A good report lists plausible chromatographic and sample prep causes with correct troubleshooting steps.",
+ "rubric_weights": {
+    "task_completion": 0.2,
+    "factual_correctness": 0.3,
+    "coverage": 0.2,
+    "clarity_structure": 0.2,
+    "format_compliance": 0.1
+ }}

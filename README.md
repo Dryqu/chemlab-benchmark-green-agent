@@ -15,6 +15,14 @@ The Green Agent:
 * Scores them using a rubric-based evaluator
 * Returns deterministic, reproducible results
 
+## Competition Abstract
+
+ChemLab-Expert is a Green Agent benchmark designed for AgentX / AgentBeats Phase 1 to evaluate research agents in analytical chemistry. Atrazine, a widely studied pesticide, is used as the core analyte because it provides realistic, technically rich tasks: literature extraction, HPLC/LC-MS method comparison, troubleshooting, and structured scientific reporting. Each task requires domain-relevant reasoning grounded in chromatography and environmental analysis.
+
+The benchmark follows an artifact-submission pattern. A Purple Agent produces a Markdown research report, and the Green Agent scores the report using a rubric-based evaluator that combines factual correctness, task completion, coverage, clarity, and format compliance. All tasks and reference answers are deterministic, ensuring reproducible evaluation.
+
+ChemLab-Expert offers a scientifically rigorous domain where correctness is grounded in real method-development practices, providing a meaningful testbed for evaluating the reasoning abilities of research agents.
+
 ## Task Types
 
 The benchmark contains tasks in five categories:
@@ -52,6 +60,17 @@ The benchmark returns:
 * Rubric breakdown
 * Optional evaluator comments
 * Final averaged score
+
+
+```mermaid
+flowchart LR
+    A[Task Dataset<br/>tasks.jsonl] -->|select task| B(Green Agent)
+    B -->|send task| C(Purple Agent)
+    C -->|return report| B
+    B -->|evaluate with rubric<br/>references.jsonl| D[LLM Evaluator]
+    D -->|scores| B
+    B --> E[Final Benchmark Score]
+```
 
 ## Reproducibility Rules
 
@@ -126,8 +145,6 @@ The benchmark returns:
 * The final averaged score (0–5)
 
 This completes a reproducible evaluation run of the ChemLab-Expert benchmark.
-
-
 
 ## File Structure
 

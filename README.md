@@ -76,8 +76,6 @@ pip install .
 
 ### 2\. Prepare an LLM client
 
-You must provide a simple wrapper class with a `.chat(system\_prompt, user\_prompt)` method.
-
 Example (pseudo):
 
 ```python
